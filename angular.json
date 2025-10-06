@@ -21,7 +21,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets", // <-- CHANGE: Point to the 'src/assets' folder
+                "output": "/assets/"   // <-- ADD: Map it to the root 'assets' path
               }
             ],
             "styles": [
@@ -78,7 +79,8 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "src/assets", // <-- CHANGE: Point to the 'src/assets' folder
+                  "output": "/assets/"   // <-- ADD: Map it to the root 'assets' path
               }
             ],
             "styles": [

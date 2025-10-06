@@ -1,13 +1,14 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MemeDisplayComponent } from './meme-display/meme-display';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, MemeDisplayComponent],
+  standalone: true,
+  imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('Pizza til grads!');
+  protected imagePath = 'assets/img/pizza-meme.jpg'; 
 }
