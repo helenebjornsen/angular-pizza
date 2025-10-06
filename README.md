@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # AngularPizzaWsl
-=======
-# AngularPizza
->>>>>>> f662b3ae60cf06070db5c098342e4ae90af0f9d0
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.3.
 
