@@ -1,16 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { MemeDisplayComponent } from './meme-display/meme-display';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, MemeDisplayComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-<<<<<<< HEAD
-  protected readonly title = signal('angular-pizza-wsl');
-=======
-  protected readonly title = signal('angular-pizza');
->>>>>>> f662b3ae60cf06070db5c098342e4ae90af0f9d0
+  protected readonly title = signal('Pizza til grads!');
 }

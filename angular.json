@@ -3,11 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-<<<<<<< HEAD
-    "angular-pizza-wsl": {
-=======
-    "angular-pizza": {
->>>>>>> f662b3ae60cf06070db5c098342e4ae90af0f9d0
+    "angular-pizza-wsl": {  
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,17 +56,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-<<<<<<< HEAD
-              "buildTarget": "angular-pizza-wsl:build:production"
+              "buildTarget": "angular-pizza-wsl:build:production"  // <-- Keep HEAD
             },
             "development": {
-              "buildTarget": "angular-pizza-wsl:build:development"
-=======
-              "buildTarget": "angular-pizza:build:production"
-            },
-            "development": {
-              "buildTarget": "angular-pizza:build:development"
->>>>>>> f662b3ae60cf06070db5c098342e4ae90af0f9d0
+              "buildTarget": "angular-pizza-wsl:build:development"  // <-- Keep HEAD
             }
           },
           "defaultConfiguration": "development"
