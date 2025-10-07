@@ -1,5 +1,10 @@
 <h1>Pizza til grads!</h1>
 
-<img [src]="imagePath" alt="A dynamically loaded image">
+<div class="meme-area">
+
+<img [src]="currentMemePath()" alt="Lalalala">
+
+<button (click)="generateNewMeme()">Nytt pizza meme 🍕</button>
+</div>
 
 <router-outlet />
