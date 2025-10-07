@@ -1,4 +1,5 @@
-/* Apply to both the body (document) and the main Angular root element */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 html, body, app-root {
     cursor: url('assets/img/pizza-cursor.cur'), auto;
 }
@@ -7,3 +8,5 @@ html, body, app-root {
 .meme-area {
     cursor: url('assets/img/pizza-cursor.cur'), auto;
 }
+
+
