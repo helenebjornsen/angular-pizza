@@ -1,1 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+/* Apply to both the body (document) and the main Angular root element */
+html, body, app-root {
+    cursor: url('assets/img/pizza-cursor.cur'), auto;
+}
+
+/* Also, check the meme-area, as containers sometimes override it */
+.meme-area {
+    cursor: url('assets/img/pizza-cursor.cur'), auto;
+}

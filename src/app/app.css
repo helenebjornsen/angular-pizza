@@ -19,3 +19,7 @@ h1{
     margin-bottom: 20px;
     display: block;
 }
+/* Force the button to use the custom cursor instead of the default "pointer" hand */
+button {
+    cursor: url('/assets/img/pizza-cursor.cur'), auto;
+}

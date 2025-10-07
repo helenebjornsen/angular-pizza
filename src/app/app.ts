@@ -18,22 +18,26 @@ export class App {
     'assets/img/pizza-meme.jpg',
     'assets/img/pizza-meme2.jpg',
     'assets/img/pizza-meme3.jpg',
+    'assets/img/pizza-meme4.jpg',
+    'assets/img/pizza-meme5.jpg',
+    'assets/img/pizza-meme6.jpg'
   ];
 
-  //Signal to hold the current image path
+  //Variable to hold the current meme index
+  private currentIndex: number = 0;
+
+  //The Signal that holds the current meme path
   protected currentMemePath = signal(this.memePaths[0]);
+
 
   //Method to change the image when the button is clicked
   generateNewMeme() {
-    let newIndex: number;
-    let currentPath = this.currentMemePath();
+   
+  // This increments the index, or resets it to 0 if it exceeds the array bounds.
+  this.currentIndex = (this.currentIndex + 1) % this.memePaths.length;
 
-    //Ensure the new image is different from the current one
-    do {
-      newIndex = Math.floor(Math.random() * this.memePaths.length);
-    } while (this.memePaths[newIndex] === currentPath);
-
-    this.currentMemePath.set(this.memePaths[newIndex]);
+  // Update the signal with the new meme path
+  this.currentMemePath.set(this.memePaths[this.currentIndex]);
 
 }
 
