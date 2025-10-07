@@ -1,10 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, CommonModule],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
@@ -26,6 +27,10 @@ export class App {
   //Variable to hold the current meme index
   private currentIndex: number = 0;
 
+  //Signal to track if the user has completed a full cycle (6 clicks)
+  protected hasCompletedCycle = signal(false);
+
+
   //The Signal that holds the current meme path
   protected currentMemePath = signal(this.memePaths[0]);
 
@@ -35,6 +40,13 @@ export class App {
    
   // This increments the index, or resets it to 0 if it exceeds the array bounds.
   this.currentIndex = (this.currentIndex + 1) % this.memePaths.length;
+
+  // Check if we've completed a full cycle through the memes
+  if (this.currentIndex === 0) {
+    this.hasCompletedCycle.set(true);
+  } else {
+    this.hasCompletedCycle.set(false);
+  }
 
   // Update the signal with the new meme path
   this.currentMemePath.set(this.memePaths[this.currentIndex]);

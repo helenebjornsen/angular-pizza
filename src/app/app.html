@@ -1,6 +1,10 @@
 <h1>Pizza til grads!</h1>
 
-<div class="meme-area">
+<div class="meme-area" [ngClass]="{'cycle-completed': hasCompletedCycle()}">
+
+@if (hasCompletedCycle()) {
+  <p class="congrats-message">🎉 Gratulerer! Du har sett alle pizza-memsene! 🎉</p>
+    }
 
 <img [src]="currentMemePath()" alt="A pizza meme image">
 
