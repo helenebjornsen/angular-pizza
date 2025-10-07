@@ -1,0 +1,21 @@
+
+.meme-area {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Arial', sans-serif;
+    color: darkred;
+}
+
+.meme-area img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+}
