@@ -26,10 +26,22 @@ h1{
     max-height: 380px;
     object-fit: contain; 
 }
-/* Force the button to use the custom cursor instead of the default "pointer" hand */
+/* Force the button to use the custom cursor */
 button {
     cursor: url('/assets/img/pizza-cursor.cur'), auto;
+    font-family: 'Bangers', cursive;
+    background-color: #ffcc00; 
+    text-align: center; 
 }
+
+button:active {
+    box-shadow: 0 2px #b3391b; /* Shadow collapses, making it look pressed */
+    transform: translateY(4px); /* Button moves down */
+    background-color: #c94020; /* Solid red when pressed */
+}
+button:hover {
+    background-color: #ffdb4d; /* Lighter yellow on hover */
+
 
 .cycle-completed {
     /* Flashy Border for Completion */
@@ -47,6 +59,5 @@ button {
 }
 
 .cycle-completed img {
-    /* Subtle effect on image when cycle is complete */
     opacity: 0.95; 
 }
