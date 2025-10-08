@@ -41,7 +41,7 @@ button:active {
 }
 button:hover {
     background-color: #ffdb4d; /* Lighter yellow on hover */
-
+}
 
 .cycle-completed {
     /* Flashy Border for Completion */
