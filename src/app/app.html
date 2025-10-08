@@ -1,5 +1,6 @@
 <h1>Pizza til grads!</h1>
 
+
 <div class="meme-area" [ngClass]="{'cycle-completed': hasCompletedCycle()}">
 
 @if (hasCompletedCycle()) {
@@ -9,6 +10,22 @@
 <img [src]="currentMemePath()" alt="A pizza meme image">
 
 <button (click)="generateNewMeme()">Nytt pizza meme 🍕</button>
+</div>
+
+<div class="link-area">
+    <h2 class="link-headline">Let's order!</h2>
+  <a href="https://www.dominos.no/" target="_blank" rel="noopener">
+    <img src="assets/img/Dominos-Logo.png" alt="Domino's Pizza Logo" class="dominos-logo">
+  </a>
+  <a href="https://live.peppes.no/menu" target="_blank" rel="noopener">
+    <img src="assets/img/Peppes-Logo.png" alt="Peppes Pizza Logo" class="peppes-logo">
+  </a>
+  <a href="https://www.pizzabakeren.no/bestill-pizza" target="_blank" rel="noopener">
+    <img src="assets/img/Pizzabakeren-Logo.png" alt="Pizzabakeren Logo" class="pizzabakeren-logo">
+  </a>
+  <a href="https://order.ninito.no/en/group/digg?utm_source=digg" target="_blank" rel="noopener">
+    <img src="assets/img/Diggpizza-Logo.png" alt="Digg pizza Logo" class="diggpizza-logo">
+  </a>
 </div>
 
 <router-outlet />

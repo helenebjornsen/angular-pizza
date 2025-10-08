@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 
+html, body {
+    /* Set the body and HTML to full viewport height */
+    height: 100%;
+    margin: 0;
+}
+
+app-root {
+    /* Use Flexbox to manage vertical positioning */
+    display: flex;
+    flex-direction: column; /* Stacks the content (h1, link-area, meme-area) vertically */
+    /* This allows space above and below the content stack */
+    justify-content: center; 
+    /* Ensures the app-root takes up the full viewport height */
+    min-height: 100vh;
+}
+
 html, body, app-root {
     cursor: url('assets/img/pizza-cursor.cur'), auto;
 }
 
-/* Also, check the meme-area, as containers sometimes override it */
+/* Check the meme-area, because containers sometimes override it */
 .meme-area {
     cursor: url('assets/img/pizza-cursor.cur'), auto;
 }
